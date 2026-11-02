@@ -1,0 +1,842 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Luis y Leidy</title>
+<meta name="description" content="Luis y Leidy se casan el 5 de diciembre de 2026. Abre tu invitación.">
+<meta property="og:title" content="Luis & Leidy · Nuestra boda">
+<meta property="og:description" content="Estás invitado a nuestro matrimonio. Sábado 5 de diciembre de 2026.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F8F4EA">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<script>document.documentElement.classList.add('locked')</script>
+<noscript><style>.sobre{display:none}</style></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Hanken+Grotesk:wght@300..700&display=swap">
+<style>
+/* Layout: una sola columna de invitación. Hero centrado con marcos en arco, ramas dibujadas y pétalos; el resto en secciones de lectura alineadas a la izquierda. */
+:root{
+  --paper:#FFFFFF;
+  --paper-2:#F8F4EA;
+  --ink:#2B2418;
+  --ink-soft:#6F6552;
+  --orchid:#8E6A1C;
+  --leaf:#C09A45;
+  --line:rgba(43,36,24,.16);
+  --water:#E3E9EC;
+  --park:#EDE7D3;
+  --petal-a:#D4AF5F;
+  --petal-b:#F1E1B5;
+  --on:#FFFFFF;
+  --display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+/* Invitación con un solo aspecto, claro: blanco y dorado en cualquier tema del dispositivo. */
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{touch-action:pan-x pan-y}
+body{
+  margin:0;
+  background-color:var(--paper);
+  background-image:radial-gradient(900px 520px at 90% -4%,color-mix(in srgb,var(--orchid) 11%,transparent),transparent),
+                   radial-gradient(800px 480px at -6% 62%,color-mix(in srgb,var(--leaf) 11%,transparent),transparent);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 104px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin-inline:auto}
+button,input,textarea,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--orchid);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.eyebrow{margin:0;font:600 .7rem/1.3 var(--body);letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
+h1,h2,h3{margin:0;text-wrap:balance}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;isolation:isolate;text-align:center;padding-block:56px 56px;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.branch{position:absolute;width:clamp(120px,34vw,210px);height:auto;z-index:-1;pointer-events:none;color:var(--leaf);opacity:.7}
+.branch .flower{stroke:var(--orchid)}
+.b1{left:-6px;bottom:-10px}
+.b2{right:-6px;top:-10px;transform:rotate(180deg)}
+.branch path{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 2.2s cubic-bezier(.5,0,.2,1) backwards;animation-delay:var(--d,0s)}
+@keyframes draw{from{stroke-dashoffset:1}}
+.rise{animation:rise .95s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--i,0)*.14s + .15s)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+
+.names{font-family:var(--display);font-weight:500;font-size:clamp(3.1rem,14vw,6.6rem);line-height:.94;letter-spacing:-.012em;margin-top:.32em}
+.names .n-a,.names .n-b{display:block}
+.names .amp{display:block;font-style:italic;font-weight:400;color:var(--orchid);font-size:.46em;line-height:1.25}
+
+.portrait{width:min(100%,340px);margin:36px auto 0}
+.frame{padding:8px;border:1px solid var(--orchid);border-radius:999px 999px 0 0}
+.arch{position:relative;display:block;aspect-ratio:3/4;max-width:100%;border-radius:999px 999px 0 0;overflow:hidden;background:var(--paper-2)}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+/* Velo dorado muy suave: unifica el tono de la foto con el blanco y dorado de la invitación */
+.arch::after,.wide::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(214,178,98,.14),rgba(255,248,228,0) 42%,rgba(168,128,40,.16));mix-blend-mode:soft-light}
+.arch::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.full{margin:20px auto 0;max-width:30ch;font:italic 400 clamp(1.15rem,4.6vw,1.45rem)/1.25 var(--display);color:var(--ink)}
+.full span{display:block}
+.full .and{font:600 .66rem/1 var(--body);font-style:normal;letter-spacing:.3em;text-transform:uppercase;color:var(--orchid);margin:8px 0}
+
+/* Nuestra historia: foto horizontal de la propuesta */
+.story{text-align:center}
+.story h2{margin-bottom:.8em}
+.wide-wrap{position:relative;margin:0 auto;max-width:640px;padding:10px;border:1px solid var(--orchid)}
+.wide-wrap::before{content:"";position:absolute;inset:-7px 7px 7px -7px;border:1px solid var(--leaf);opacity:.55;pointer-events:none;z-index:-1}
+.wide{position:relative;margin:0;overflow:hidden;background:var(--paper-2);aspect-ratio:1400/733}
+.wide img{width:100%;height:100%;object-fit:cover;display:block}
+.story .lead{margin:26px auto 0;max-width:36ch;font:italic 400 clamp(1.15rem,4vw,1.5rem)/1.45 var(--display);color:var(--ink);text-wrap:pretty}
+.story .divider{display:block;width:92px;height:auto;margin:22px auto 0}
+
+.datebar{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,22px);margin-top:56px}
+.datebar::before,.datebar::after{content:"";height:1px;width:min(16vw,84px);background:var(--orchid);opacity:.7}
+.datebar .side{font:600 .68rem/1.5 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+.datebar .day{font:italic 500 clamp(3.4rem,13vw,5rem)/1 var(--display);color:var(--orchid);font-variant-numeric:tabular-nums}
+.where{margin:22px 0 0;display:grid;gap:8px;justify-items:center}
+.where .w-name{font:600 .86rem/1.5 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);max-width:30ch;text-wrap:balance}
+.where .w-time{font:italic 500 clamp(2.3rem,9.5vw,3.2rem)/1 var(--display);color:var(--orchid);font-variant-numeric:tabular-nums}
+
+/* ---------- Secciones ---------- */
+.sec{padding-top:88px}
+.sec h2{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(2rem,6.4vw,3.1rem);line-height:1.06;margin:.3em 0 .7em}
+.note{margin:0;color:var(--ink-soft);font-size:.95rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:46px;padding:0 22px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  font:600 .72rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--orchid);border-color:var(--orchid);color:var(--on)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Fecha */
+.fecha-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:48px 56px;align-items:start}
+.cd-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);margin-bottom:18px}
+.cd-grid div{padding:14px 0 6px;display:grid;gap:2px}
+.cd-grid div+div{padding-left:clamp(8px,2.4vw,18px);border-left:1px solid var(--line)}
+.cd-grid b{font:500 clamp(2.1rem,8.4vw,3.5rem)/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.cd-grid span{font:600 .62rem/1.2 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.cd .note{margin-bottom:22px;min-height:1.5em}
+.cal-title{margin:0 0 14px;font:italic 400 1.5rem/1 var(--display);text-transform:capitalize}
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;max-width:340px}
+.cal-grid span{aspect-ratio:1;display:grid;place-items:center;font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+.cal-grid .h{aspect-ratio:auto;padding-bottom:8px;font-size:.66rem;font-weight:600;letter-spacing:.14em;color:var(--ink-soft)}
+.cal-grid .hit{position:relative;background:var(--orchid);color:var(--on);border-radius:50%;font-weight:700}
+.cal-grid .hit::after{content:"";position:absolute;inset:-2px;border-radius:50%;border:1px solid var(--orchid);animation:ring 2.4s ease-out infinite}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.75);opacity:0}}
+
+/* Lugar */
+.tabs{display:flex;gap:30px;border-bottom:1px solid var(--line);margin-bottom:30px}
+.tab{appearance:none;position:relative;background:none;border:0;padding:14px 0;cursor:pointer;color:var(--ink-soft);
+  font:600 .98rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;transition:color .25s}
+.tab[aria-selected="true"]{color:var(--ink)}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--orchid);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.tab[aria-selected="true"]::after{transform:scaleX(1)}
+.lugar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px 44px;align-items:start}
+.mapbox{margin:0;min-width:0}
+.map{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.mapbox figcaption{margin-top:8px;font-size:.78rem;color:var(--ink-soft)}
+.map .land{fill:var(--paper-2)}
+.map .water{fill:var(--water)}
+.map .park{fill:var(--park)}
+.map .road{fill:none;stroke:var(--paper);stroke-width:5;stroke-linecap:round}
+.map .main{stroke-width:11}
+.map .route{fill:none;stroke:var(--orchid);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:2 7;animation:march 1.4s linear infinite}
+@keyframes march{to{stroke-dashoffset:-18}}
+.map .compass{fill:var(--ink-soft);font:600 9px var(--body);text-anchor:middle}
+.pin .pb{transform:scale(.78);opacity:.8;fill:var(--leaf);transition:transform .55s cubic-bezier(.3,1.5,.5,1),opacity .3s,fill .3s}
+.pin.on .pb{transform:scale(1.18);opacity:1;fill:var(--orchid)}
+.pin .dot{fill:var(--paper)}
+.pin .ring{fill:none;stroke:var(--orchid);stroke-width:1.5;opacity:0}
+.pin.on .ring{animation:pulse 2s ease-out infinite}
+@keyframes pulse{from{transform:scale(.6);opacity:.9}to{transform:scale(3.4);opacity:0}}
+.pin .lbl{fill:var(--ink);font:600 10px var(--body);text-anchor:middle;paint-order:stroke;stroke:var(--paper-2);stroke-width:4;stroke-linejoin:round}
+
+.det.swap{animation:swap .55s cubic-bezier(.2,.7,.2,1)}
+@keyframes swap{from{opacity:0;transform:translateX(14px)}}
+.kicker{margin:0 0 10px;font:600 .7rem/1.3 var(--body);letter-spacing:.26em;text-transform:uppercase;color:var(--orchid)}
+.det .kicker{font-size:.9rem;letter-spacing:.24em;margin-bottom:6px}
+.dtime{margin:0 0 16px;font:italic 500 clamp(2.6rem,10vw,3.6rem)/1 var(--display);color:var(--orchid);font-variant-numeric:tabular-nums}
+.det h3{font:500 clamp(1.9rem,6.2vw,2.6rem)/1.12 var(--display);margin-bottom:16px}
+.addr{margin:0 0 12px;font-size:1.18rem;line-height:1.45}
+.det .note{margin-bottom:26px;font-size:1.05rem}
+
+/* Mensaje */
+.msg{text-align:center}
+.msg h2{margin-bottom:.9em}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:34px}
+.chip{appearance:none;min-height:40px;padding:0 16px;background:transparent;border:1px solid var(--line);cursor:pointer;
+  font:600 .68rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);transition:background .25s,color .25s,border-color .25s}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.quote{position:relative;margin:0 auto;max-width:34ch;padding-top:30px}
+.quote::before{content:"“";position:absolute;left:0;right:0;top:-18px;text-align:center;padding-inline:.3em;overflow:visible;font:normal 400 5.5rem/1 var(--display);color:var(--orchid);opacity:.55}
+.quote p{margin:0;font:italic 400 clamp(1.3rem,4.4vw,1.8rem)/1.45 var(--display);text-wrap:pretty}
+.quote .sign{display:block;margin-top:22px;font:600 .72rem/1 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);font-style:normal}
+.quote.swap p,.quote.swap .sign{animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+
+/* Asistencia */
+.rsvp{display:grid;gap:18px;max-width:52ch}
+.rsvp p{margin:0}
+a[x-apple-data-detectors],a[href^="tel:"]{color:inherit!important;text-decoration:none!important;font:inherit!important}
+.rsvp .tel{font:500 1.5rem/1.2 var(--display);font-variant-numeric:tabular-nums}
+.dress{padding-top:22px;border-top:1px solid var(--line);color:var(--ink);font-size:1rem}
+.dress .kicker{margin:0 0 8px}
+
+.gift{display:flex;gap:18px;align-items:flex-start;max-width:52ch}
+.gift svg{flex:none;width:46px;height:auto;margin-top:4px;color:var(--orchid)}
+footer{margin-top:96px;padding-top:28px;border-top:1px solid var(--line);text-align:center}
+footer .f-names{font:italic 400 1.8rem/1.1 var(--display)}
+footer .f-date{margin:8px 0 0;font:600 .7rem/1.4 var(--body);letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- Sobre de entrada ---------- */
+html.locked,html.locked body{overflow:hidden}
+html.locked .rise,html.locked .branch path{animation-play-state:paused}
+.names:focus{outline:none}
+.sobre{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(28px,5.5vh,48px);
+  padding:calc(24px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  background:radial-gradient(120% 90% at 50% 36%,#FFFFFF 0%,#FBF7EC 55%,#F1E8D0 100%);
+  overflow:hidden;touch-action:none;overscroll-behavior:contain;
+  transition:opacity 1s ease,transform 1s cubic-bezier(.4,0,.2,1),visibility 1s}
+.sobre.leaving{opacity:0;transform:scale(1.1);visibility:hidden;pointer-events:none}
+.salon{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.salon-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background:url(salon.jpg) center 42%/cover no-repeat,#F6F1E6;filter:saturate(.5) brightness(1.05)}
+.salon-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(90% 70% at 50% 46%,rgba(255,255,255,.38) 25%,rgba(110,95,70,.2) 100%),linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3))}
+#brillos{z-index:1}
+.sobre>*:not(canvas):not(.salon-bg){position:relative;z-index:2}
+.sobre .eyebrow{display:inline-flex;align-items:center;gap:12px;padding:11px 20px;text-align:center;font-size:.8rem;font-weight:700;letter-spacing:.2em;color:#2F2410;
+  background:rgba(255,255,255,.82);border:1px solid rgba(176,140,60,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 4px 14px rgba(90,70,30,.12);transition:opacity .5s}
+.sobre .eyebrow::before,.sobre .eyebrow::after{content:"";width:16px;height:1px;background:#B88A2E}
+.sobre.opening .eyebrow{opacity:0}
+
+.env-wrap{width:min(86vw,430px);filter:drop-shadow(0 26px 30px rgba(110,80,20,.28)) drop-shadow(0 4px 6px rgba(110,80,20,.18))}
+.env{position:relative;width:100%;aspect-ratio:4/3;perspective:1200px}
+.env svg{display:block}
+.env-back{position:absolute;inset:0;background:linear-gradient(165deg,#F6EAC9,#E8D3A3);border:1px solid rgba(176,140,60,.5)}
+
+.letter{position:absolute;left:6%;right:6%;top:8%;bottom:6%;z-index:2;display:grid;place-content:center;justify-items:center;gap:clamp(6px,2vw,11px);
+  padding:clamp(14px,4.5vw,22px) 12px;text-align:center;background:linear-gradient(180deg,#FFFFFF,#FFFCF2);box-shadow:0 1px 3px rgba(110,80,20,.22);
+  transition:transform 1.2s cubic-bezier(.3,.8,.3,1) .9s}
+.letter .orn{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.letter small{position:relative;font:600 clamp(.5rem,1.9vw,.62rem)/1 var(--body);letter-spacing:.34em;text-transform:uppercase;color:#7A6330}
+.letter b{position:relative;font:italic 500 clamp(1.5rem,7.4vw,2.2rem)/1.1 var(--display);color:var(--ink)}
+.letter b em{font-style:italic;font-weight:400;color:#A07A22;margin:0 .12em}
+.letter .divider{position:relative;width:clamp(60px,22vw,92px);height:auto}
+.letter i{position:relative;font:600 clamp(.58rem,2.2vw,.72rem)/1 var(--body);font-style:normal;letter-spacing:.28em;color:#8E6A1C}
+.sobre.opening .letter{transform:translateY(-66%)}
+
+.pocket{position:absolute;inset:0;z-index:3;width:100%;height:100%}
+.flap-wrap{position:absolute;left:0;top:0;width:100%;height:54%;z-index:4;transform-style:preserve-3d;transform-origin:50% 0;
+  transition:transform .95s cubic-bezier(.5,0,.2,1) .25s,z-index 0s linear .7s}
+.face{position:absolute;inset:0;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face.back{transform:rotateX(180deg)}
+.sobre.opening .flap-wrap{transform:rotateX(180deg);z-index:1}
+
+.seal-pos{position:absolute;left:50%;top:54%;z-index:6;width:clamp(88px,26vw,112px);transform:translate(-50%,-50%)}
+.seal{position:relative;display:block;width:100%;aspect-ratio:1;padding:0;border:0;border-radius:50%;background:none;cursor:pointer;animation:float 3.2s ease-in-out infinite}
+.seal svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 5px 7px rgba(90,60,5,.4))}
+.seal::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1.5px solid #C9A24D;pointer-events:none;animation:sealring 2.4s ease-out infinite}
+.seal text{font-family:var(--display);font-style:normal;font-weight:600}
+.seal:focus-visible{outline:2px solid var(--orchid);outline-offset:7px}
+.sobre.opening .seal{animation:pop .7s cubic-bezier(.4,0,.2,1) forwards;pointer-events:none}
+.sobre.opening .seal::after{display:none}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-3px) scale(1.04)}}
+@keyframes sealring{from{transform:scale(.95);opacity:.9}to{transform:scale(1.55);opacity:0}}
+@keyframes pop{0%{transform:scale(1)}35%{transform:scale(1.22) rotate(-4deg)}100%{transform:scale(.2) rotate(10deg);opacity:0}}
+.sobre-hint{margin:0;padding:11px 20px;font:700 .8rem/1.2 var(--body);letter-spacing:.18em;text-transform:uppercase;color:#2F2410;text-align:center;
+  background:rgba(255,255,255,.82);border:1px solid rgba(176,140,60,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 4px 14px rgba(90,70,30,.12);animation:nudge 2.4s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateY(-3px)}}
+.sobre.opening .sobre-hint{opacity:0;animation:none;transition:opacity .4s}
+
+/* ---------- Música ---------- */
+.music{position:fixed;z-index:30;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--orchid);border-radius:50%;
+  background:color-mix(in srgb,var(--paper) 90%,transparent);color:var(--orchid);cursor:pointer;box-shadow:0 8px 24px rgba(20,16,8,.18);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:background .25s,color .25s}
+.music svg{width:22px;height:22px}
+.music .off{opacity:1}
+.music[aria-pressed="true"] .off{opacity:0}
+.music[aria-pressed="true"]{background:var(--orchid);color:var(--on)}
+.music[aria-pressed="true"] svg{animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.14)}}
+
+.toast{position:fixed;z-index:60;left:50%;bottom:calc(80px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);max-width:calc(100% - 32px);padding:11px 18px;
+  background:var(--ink);color:var(--paper);font-size:.88rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+@media (max-width:480px){
+  .sec{padding-top:72px}
+  .tabs{gap:22px}
+  .two{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important;animation-delay:0s!important;scroll-behavior:auto!important}
+}
+</style>
+
+<main class="wrap">
+  <header class="hero" id="hero">
+    <canvas id="petals" aria-hidden="true"></canvas>
+    <svg class="branch b1" viewBox="0 0 200 260" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"></svg>
+    <svg class="branch b2" viewBox="0 0 200 260" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"></svg>
+
+    <p class="eyebrow rise" style="--i:0">Con la bendición de nuestras familias</p>
+    <h1 class="names rise" style="--i:1"><span class="n-a">Luis</span><span class="amp">&amp;</span><span class="n-b">Leidy</span></h1>
+
+    <div class="portrait rise" style="--i:2">
+      <div class="frame">
+        <div class="arch"><img src="foto-pareja.jpg" width="900" height="1200" alt="Luis y Leidy abrazados, sentados entre flores y luces doradas" fetchpriority="high"></div>
+      </div>
+    </div>
+    <p class="full rise" style="--i:3"><span class="fa">Luis Eduardo Chamorro Arévalo</span><span class="and">y</span><span class="fb">Leidy Tatiana Medina Ardila</span></p>
+
+    <div class="datebar rise" style="--i:4">
+      <span class="side" id="dow">sábado</span>
+      <span class="day" id="dayn">13</span>
+      <span class="side"><span id="mon">marzo</span><br><span id="yr">2027</span></span>
+    </div>
+    <p class="where rise" style="--i:5" id="heroWhere"><span class="w-name" id="heroPlace"></span><span class="w-time" id="heroTime"></span></p>
+  </header>
+
+  <section class="sec story" id="historia" aria-labelledby="hHist">
+    <p class="eyebrow">Nuestra historia</p>
+    <h2 id="hHist">Entre pétalos y un anillo, dijo que sí</h2>
+    <div class="wide-wrap">
+      <figure class="wide"><img src="foto-propuesta.jpg" width="1400" height="733" loading="lazy" alt="Un plato con la pregunta “¿Quieres ser mi esposa?” escrita en dulce, una caja de anillo abierta y la mano de Leidy con su anillo de compromiso"></figure>
+    </div>
+    <p class="lead">“¿Quieres ser mi esposa?” Esa pregunta lo cambió todo, y hoy queremos celebrar la respuesta contigo.</p>
+    <svg class="divider" viewBox="0 0 90 10" aria-hidden="true"><path d="M0 5H34M56 5H90" stroke="#C09A45" stroke-width=".8" fill="none"/><path d="M45 .5 49.5 5 45 9.5 40.5 5Z" fill="#C09A45"/></svg>
+  </section>
+
+  <section class="sec" id="fecha" aria-labelledby="hFecha">
+    <p class="eyebrow">La fecha</p>
+    <h2 id="hFecha"></h2>
+    <div class="fecha-grid">
+      <div class="cd">
+        <div class="cd-grid" role="timer" aria-label="Tiempo que falta para la ceremonia">
+          <div><b id="cdD">0</b><span>días</span></div>
+          <div><b id="cdH">00</b><span>horas</span></div>
+          <div><b id="cdM">00</b><span>min</span></div>
+          <div><b id="cdS">00</b><span>seg</span></div>
+        </div>
+        <p class="note" id="cdNote"></p>
+        <a class="btn" id="gcal" href="#" target="_blank" rel="noopener">Añadir al calendario</a>
+      </div>
+      <div>
+        <p class="cal-title" id="calTitle"></p>
+        <div class="cal-grid" id="calGrid" role="img"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="lugar" aria-labelledby="hLugar">
+    <p class="eyebrow">El lugar</p>
+    <h2 id="hLugar">Dónde nos vemos</h2>
+    <div class="tabs" role="tablist" aria-label="Elige un lugar">
+      <button class="tab" role="tab" id="tab-cer" aria-controls="lugarPanel" aria-selected="true" data-k="cer">Ceremonia</button>
+      <button class="tab" role="tab" id="tab-rec" aria-controls="lugarPanel" aria-selected="false" tabindex="-1" data-k="rec">Recepción</button>
+    </div>
+    <div class="lugar" id="lugarPanel" role="tabpanel" aria-labelledby="tab-cer">
+      <figure class="mapbox">
+        <svg class="map" viewBox="0 0 400 300" role="img" aria-label="Plano ilustrativo con la ceremonia y la recepción unidas por una ruta">
+          <defs><clipPath id="routeclip"><rect x="92" y="0" width="216" height="300"/></clipPath></defs>
+          <rect class="land" width="400" height="300"/>
+          <path class="water" d="M-10 252C70 236 140 280 230 258S350 214 410 230V310H-10Z"/>
+          <rect class="park" x="28" y="30" width="96" height="66" rx="24"/>
+          <rect class="park" x="248" y="150" width="104" height="58" rx="8"/>
+          <circle class="park" cx="330" cy="40" r="26"/>
+          <path class="road" d="M90-10 100 310"/>
+          <path class="road" d="M200-10 214 310"/>
+          <path class="road" d="M296-10 288 310"/>
+          <path class="road" d="M-10 150 410 160"/>
+          <path class="road" d="M-10 52 410 36"/>
+          <path class="road main" d="M-10 214C90 205 150 120 230 112S340 92 410 80"/>
+          <path class="route" clip-path="url(#routeclip)" d="M-10 214C90 205 150 120 230 112S340 92 410 80"/>
+          <g class="compass" transform="translate(372 270)"><path d="M0-14 6 6 0 2-6 6Z"/><text y="18">N</text></g>
+          <g class="pin on" id="pin-cer" transform="translate(92 207)">
+            <ellipse class="ring" rx="10" ry="4"/>
+            <g class="pb"><path d="M0 0C-12-14-14-20-14-26A14 14 0 1 1 14-26C14-20 12-14 0 0Z"/><circle class="dot" cx="0" cy="-26" r="5"/></g>
+            <text class="lbl" y="18">Ceremonia</text>
+          </g>
+          <g class="pin" id="pin-rec" transform="translate(306 98)">
+            <ellipse class="ring" rx="10" ry="4"/>
+            <g class="pb"><path d="M0 0C-12-14-14-20-14-26A14 14 0 1 1 14-26C14-20 12-14 0 0Z"/><circle class="dot" cx="0" cy="-26" r="5"/></g>
+            <text class="lbl" y="18">Recepción</text>
+          </g>
+        </svg>
+        <figcaption>Plano ilustrativo. El botón “Cómo llegar” abre el mapa real.</figcaption>
+      </figure>
+      <div class="det" id="det">
+        <p class="kicker" id="dKick">Ceremonia</p>
+        <p class="dtime" id="dTime"></p>
+        <h3 id="dName"></h3>
+        <p class="addr" id="dAddr"></p>
+        <p class="note" id="dNote"></p>
+        <div class="btns">
+          <a class="btn" id="dMap" href="#" target="_blank" rel="noopener">Cómo llegar</a>
+          <button class="btn ghost" id="dCopy" type="button">Copiar dirección</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec msg" id="mensaje" aria-labelledby="hMsg">
+    <p class="eyebrow">Un mensaje para ti</p>
+    <h2 id="hMsg">Elige cómo te lo contamos</h2>
+    <div class="chips" role="group" aria-label="Tono del mensaje">
+      <button class="chip" type="button" data-tone="calido" aria-pressed="true">Cálido</button>
+      <button class="chip" type="button" data-tone="formal" aria-pressed="false">Formal</button>
+      <button class="chip" type="button" data-tone="divertido" aria-pressed="false">Divertido</button>
+      <button class="chip" type="button" data-tone="propio" aria-pressed="false">Propio</button>
+    </div>
+    <blockquote class="quote" id="quote" aria-live="polite">
+      <p id="msgText"></p>
+      <span class="sign" id="msgSign"></span>
+    </blockquote>
+  </section>
+
+  <section class="sec" id="asistencia" aria-labelledby="hRsvp">
+    <p class="eyebrow">Asistencia</p>
+    <h2 id="hRsvp">¿Nos acompañas?</h2>
+    <div class="rsvp">
+      <p>Confírmanos tu asistencia antes del <strong id="rsvpDate"></strong>, por favor.</p>
+      <p class="tel" id="tel">+57 311 336 1823</p>
+      <div class="btns">
+        <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <button class="btn ghost" id="telCopy" type="button">Copiar número</button>
+      </div>
+      <div class="dress"><p class="kicker">Código de vestimenta</p><p>Ven como te sientas más cómoda o cómodo. Solo pedimos no usar vestidos blancos, que son exclusivos de la novia.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sobres" aria-labelledby="hSobres">
+    <p class="eyebrow">Lluvia de sobres</p>
+    <h2 id="hSobres">Tu compañía es nuestro mejor regalo</h2>
+    <div class="gift">
+      <svg viewBox="0 0 48 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="44" height="30" rx="1.5"/><path d="M2 5l22 16L46 5"/><path d="M2 32l16-14M46 32L30 18"/></svg>
+      <p class="note">Si deseas tener un detalle con nosotros, recibiremos con mucho cariño una lluvia de sobres.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="f-names"><span class="n-a">Luis</span> &amp; <span class="n-b">Leidy</span></p>
+    <p class="f-date" id="fDate"></p>
+  </footer>
+</main>
+
+<div class="sobre" id="sobre">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E2A0"/><stop offset=".5" stop-color="#D2AC55"/><stop offset="1" stop-color="#A67C28"/></linearGradient>
+      <linearGradient id="gPale" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF8E0"/><stop offset="1" stop-color="#E8D49A"/></linearGradient>
+      <linearGradient id="gFoil" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9A24D"/><stop offset=".3" stop-color="#F3DC93"/><stop offset=".55" stop-color="#B88A2E"/><stop offset=".8" stop-color="#F3DC93"/><stop offset="1" stop-color="#C9A24D"/></linearGradient>
+      <symbol id="sprig" viewBox="0 0 120 100"><path d="M6 92Q34 34 112 10" fill="none" stroke="#B88A2E" stroke-width="1.1" stroke-linecap="round"/><path transform="translate(12.1 80.7) rotate(-110.9) scale(1.18)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(12.1 80.7) rotate(-110.9) scale(1.18)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(19.2 70.2) rotate(-1.4) scale(1.11)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(19.2 70.2) rotate(-1.4) scale(1.11)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(27.3 60.3) rotate(-100.0) scale(1.04)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gPale)" fill-opacity="0.8" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(27.3 60.3) rotate(-100.0) scale(1.04)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(36.4 51.0) rotate(9.2) scale(0.97)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(36.4 51.0) rotate(9.2) scale(0.97)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(46.5 42.5) rotate(-89.7) scale(0.90)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(46.5 42.5) rotate(-89.7) scale(0.90)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(57.6 34.6) rotate(19.0) scale(0.83)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gPale)" fill-opacity="0.8" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(57.6 34.6) rotate(19.0) scale(0.83)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(69.7 27.5) rotate(-80.5) scale(0.76)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(69.7 27.5) rotate(-80.5) scale(0.76)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(82.8 21.0) rotate(27.6) scale(0.69)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(82.8 21.0) rotate(27.6) scale(0.69)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path transform="translate(96.9 15.1) rotate(-72.6) scale(0.62)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gPale)" fill-opacity="0.8" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(96.9 15.1) rotate(-72.6) scale(0.62)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/><path d="M23.1 65.1L37.9 69.7" stroke="#B88A2E" stroke-width=".7" fill="none"/><circle cx="29.8" cy="67.2" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="34.2" cy="68.6" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="37.9" cy="69.7" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><path d="M46.5 42.5L42.7 29.0" stroke="#B88A2E" stroke-width=".7" fill="none"/><circle cx="44.8" cy="36.4" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="43.7" cy="32.4" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="42.7" cy="29.0" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><path d="M76.1 24.1L85.5 32.4" stroke="#B88A2E" stroke-width=".7" fill="none"/><circle cx="80.3" cy="27.9" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="83.1" cy="30.4" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><circle cx="85.5" cy="32.4" r="1.9" fill="url(#gGold)" stroke="#A67C28" stroke-width=".3"/><path transform="translate(112.0 10.0) rotate(-17.1) scale(0.60)" d="M0 0C6-6 17-7 26 0C17 7 6 6 0 0Z" fill="url(#gGold)" fill-opacity="1" stroke="#A67C28" stroke-opacity=".5" stroke-width=".4"/><path transform="translate(112.0 10.0) rotate(-17.1) scale(0.60)" d="M1 0H22" stroke="#A67C28" stroke-opacity=".45" stroke-width=".3" fill="none"/></symbol>
+    </defs>
+  </svg>
+  <div class="salon-bg" aria-hidden="true"></div>
+  <canvas class="salon" id="brillos" aria-hidden="true"></canvas>
+  <p class="eyebrow">Tienes una invitación</p>
+  <div class="env-wrap">
+    <div class="env">
+      <div class="env-back"></div>
+
+      <div class="letter" aria-hidden="true">
+        <svg class="orn" viewBox="0 0 273 200" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#C09A45">
+          <rect x="4" y="4" width="265" height="192" stroke-width="1"/>
+          <rect x="9" y="9" width="255" height="182" stroke-width=".5"/>
+          <g stroke-width=".9">
+            <path d="M9 26A17 17 0 0 1 26 9"/>
+            <path d="M247 9A17 17 0 0 1 264 26"/>
+            <path d="M264 174A17 17 0 0 1 247 191"/>
+            <path d="M26 191A17 17 0 0 1 9 174"/>
+          </g>
+        </svg>
+        <small>Nos casamos</small>
+        <b><span class="n-a">Luis</span> <em>&amp;</em> <span class="n-b">Leidy</span></b>
+        <svg class="divider" viewBox="0 0 90 10" aria-hidden="true"><path d="M0 5H34M56 5H90" stroke="#C09A45" stroke-width=".8" fill="none"/><path d="M45 .5 49.5 5 45 9.5 40.5 5Z" fill="#C09A45"/></svg>
+        <i id="lDate"></i>
+      </div>
+
+      <svg class="pocket" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="gPocket" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FCF3DC"/><stop offset=".55" stop-color="#F5E7C6"/><stop offset="1" stop-color="#EBD6A6"/>
+          </linearGradient>
+        </defs>
+        <polygon points="0,0 200,162 400,0 400,300 0,300" fill="url(#gPocket)" stroke="#C9A24D" stroke-opacity=".7" stroke-width="1" vector-effect="non-scaling-stroke"/>
+        <path d="M0 300 200 162 400 300" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+        <path d="M0 300 200 162 400 300" fill="none" stroke="#B88A2E" stroke-opacity=".28" stroke-width="1" vector-effect="non-scaling-stroke" transform="translate(0 1.4)"/>
+        <use href="#sprig" x="6" y="190" width="140" height="117"/>
+      </svg>
+
+      <div class="flap-wrap">
+        <svg class="face front" viewBox="0 0 400 162" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="gFlap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF9E8"/><stop offset="1" stop-color="#F6E8C8"/></linearGradient>
+          </defs>
+          <polygon points="0,0 400,0 200,162" fill="url(#gFlap)"/>
+          <use href="#sprig" x="302" y="2" width="92" height="77" transform="rotate(180 348 40.5)"/>
+          <polyline points="0,0 200,162 400,0" fill="none" stroke="url(#gFoil)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <svg class="face back" viewBox="0 0 400 162" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <pattern id="pLiner" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <rect width="14" height="14" fill="#F1E1B8"/>
+              <path d="M7 2 12 7 7 12 2 7Z" fill="none" stroke="#C09A45" stroke-opacity=".6" stroke-width=".8"/>
+              <circle cx="7" cy="7" r="1" fill="#C09A45" fill-opacity=".6"/>
+            </pattern>
+          </defs>
+          <polygon points="0,162 400,162 200,0" fill="url(#pLiner)"/>
+          <polyline points="0,162 200,0 400,162" fill="none" stroke="url(#gFoil)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </div>
+
+      <div class="seal-pos">
+        <button class="seal" id="sello" type="button" aria-label="Abrir la invitación">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <radialGradient id="wax" cx="32%" cy="26%" r="88%"><stop offset="0" stop-color="#F7EBC6"/><stop offset=".38" stop-color="#D9BC75"/><stop offset=".78" stop-color="#B08D3E"/><stop offset="1" stop-color="#7F5E1A"/></radialGradient>
+              <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF2D4"/><stop offset=".5" stop-color="#C9A859"/><stop offset="1" stop-color="#8E6A1C"/></linearGradient>
+              <radialGradient id="disc" cx="38%" cy="30%" r="90%"><stop offset="0" stop-color="#E9D8A4"/><stop offset=".55" stop-color="#CBAA62"/><stop offset="1" stop-color="#A6823A"/></radialGradient>
+              <g id="motif" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M0 .95C-.3 .7-1 .25-1 -.35C-1 -.8-.65 -1-.35 -1C-.15 -1 0 -.85 0 -.65C0 -.85 .15 -1 .35 -1C.65 -1 1 -.8 1 -.35C1 .25 .3 .7 0 .95Z" transform="translate(41 42) rotate(-8) scale(14)" fill="none" stroke="currentColor" stroke-width=".105"/>
+                <path d="M0 .95C-.3 .7-1 .25-1 -.35C-1 -.8-.65 -1-.35 -1C-.15 -1 0 -.85 0 -.65C0 -.85 .15 -1 .35 -1C.65 -1 1 -.8 1 -.35C1 .25 .3 .7 0 .95Z" transform="translate(59 42) rotate(8) scale(14)" fill="none" stroke="currentColor" stroke-width=".105"/>
+                <text class="ini-a" x="35.8" y="46.2" text-anchor="middle" font-size="15.5" font-weight="600" fill="currentColor" stroke="none">L</text><text class="ini-b" x="64.2" y="46.2" text-anchor="middle" font-size="15.5" font-weight="600" fill="currentColor" stroke="none">L</text><g fill="currentColor" stroke="currentColor"><path d="M50.5 78C43 79.5 34.5 75.5 29.5 66.5" fill="none" stroke-width=".7"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(47.8 78.3) rotate(221) scale(0.8)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(44.1 78.0) rotate(-211) scale(0.9)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(40.4 76.8) rotate(-115) scale(0.95)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(36.9 74.9) rotate(-187) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(33.6 72.1) rotate(-92) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(31.1 69.0) rotate(-167) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(29.5 66.5) rotate(-119) scale(1.1)"/></g>
+                <g fill="currentColor" stroke="currentColor" transform="translate(100 0) scale(-1 1)"><path d="M50.5 78C43 79.5 34.5 75.5 29.5 66.5" fill="none" stroke-width=".7"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(47.8 78.3) rotate(221) scale(0.8)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(44.1 78.0) rotate(-211) scale(0.9)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(40.4 76.8) rotate(-115) scale(0.95)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(36.9 74.9) rotate(-187) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(33.6 72.1) rotate(-92) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(31.1 69.0) rotate(-167) scale(1.0)"/><path d="M0 0C1.8-2 4.6-2 6.4 0C4.6 2 1.8 2 0 0Z" transform="translate(29.5 66.5) rotate(-119) scale(1.1)"/></g>
+              </g>
+            </defs>
+            <path id="waxPath" fill="url(#wax)" d="M50 6A44 44 0 1 1 49.9 6Z"/>
+            <path d="M50 6A44 44 0 1 1 49.9 6Z" fill="none" stroke="rgba(255,248,214,.55)" stroke-width="1" transform="translate(-.5 -.7) scale(1.003)" opacity=".0"/>
+            <circle cx="50" cy="50" r="37.5" fill="none" stroke="rgba(92,62,8,.45)" stroke-width="2.6" transform="translate(.7 .9)"/>
+            <circle cx="50" cy="50" r="37.5" fill="none" stroke="url(#rim)" stroke-width="2.4"/>
+            <circle cx="50" cy="50" r="35.4" fill="url(#disc)"/>
+            <circle cx="50" cy="50" r="35.4" fill="none" stroke="rgba(92,62,8,.5)" stroke-width=".9"/>
+            <circle cx="50" cy="50" r="34.6" fill="none" stroke="rgba(255,246,206,.55)" stroke-width=".7" transform="translate(.5 .7)"/>
+            <use href="#motif" style="color:rgba(88,64,20,.55)" transform="translate(.55 .7)"/>
+            <use href="#motif" style="color:rgba(255,249,222,.95)" transform="translate(-.4 -.5)"/>
+            <use href="#motif" style="color:#E0C98C"/>
+            <ellipse cx="36" cy="25" rx="14" ry="5" fill="rgba(255,252,232,.42)" transform="rotate(-30 36 25)"/>
+          </svg>
+          </button>
+      </div>
+    </div>
+  </div>
+  <p class="sobre-hint">Toca el sello para abrir</p>
+</div>
+
+<audio id="musica" src="cancion.mp3" loop preload="metadata"></audio>
+<button class="music" id="musicBtn" type="button" hidden aria-pressed="false" aria-label="Música: pausar o reproducir">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path class="off" d="M3 3l18 18" /></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+/* Sin zoom: bloquea el pellizco y el zoom con rueda para que la invitación quede fija */
+['gesturestart','gesturechange','gestureend'].forEach(t=>document.addEventListener(t,e=>e.preventDefault()));
+document.addEventListener('touchmove',e=>{ if(e.touches.length>1) e.preventDefault(); },{passive:false});
+document.addEventListener('wheel',e=>{ if(e.ctrlKey) e.preventDefault(); },{passive:false});
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const p2=n=>String(n).padStart(2,'0');
+const MONTHS=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const DAYS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const KEY='matrimonio-luis-leidy-v2';
+
+const DEF={
+  a:'Luis', b:'Leidy', fa:'Luis Eduardo Chamorro Arévalo', fb:'Leidy Tatiana Medina Ardila',
+  date:'2026-12-05', tCer:'15:00', tRec:'19:00',
+  cer:{name:'Parroquia La Resurrección del Señor', addr:'La iglesia queda por El Único', q:'Parroquia La Resurrección del Señor, Pasto, Nariño, Colombia', note:'La misa empieza a las 3:00 p. m. en punto. Te pedimos ser muy puntual.'},
+  rec:{name:'Restaurante Aroli', addr:'Calle 21 #33A-07, Avenida El Río, barrio La Riviera, vía del río', q:'Restaurante Aroli, Calle 21 #33A-07, Avenida El Río, Pasto, Nariño, Colombia', note:'La cena empieza a las 7:00 p. m. Te esperamos para celebrar juntos.'},
+  tone:'calido',
+  custom:'Tu presencia hace que este día sea todavía más especial. Te esperamos con el corazón lleno de alegría.'
+};
+const MSG={
+  calido:'Después de tantos caminos juntos, decidimos recorrer el resto de la mano. Nos haría inmensamente felices que nos acompañaras en la misa y en la cena, el día en que nuestra historia se vuelve promesa.',
+  formal:'Con la bendición de Dios y de nuestras familias, tenemos el honor de invitarte a la celebración de nuestro matrimonio: la ceremonia religiosa y la cena que le sigue. Tu compañía será el mejor regalo de ese día.',
+  divertido:'Nos dimos cuenta de que juntos todo sabe mejor, así que decidimos casarnos y celebrarlo con una buena cena. Ven a la misa, trae buen apetito y sé testigo del mejor día de nuestras vidas.'
+};
+
+const clone=o=>JSON.parse(JSON.stringify(o));
+function load(){ return clone(DEF); }
+let S=load();
+function save(){}
+
+const DATE_RE=/^(\d{4})-(\d{2})-(\d{2})$/;
+const TIME_RE=/^\d{2}:\d{2}$/;
+function ymd(){ const r=DATE_RE.exec(S.date)||DATE_RE.exec(DEF.date); return [+r[1],+r[2],+r[3]]; }
+const tCer=()=>TIME_RE.test(S.tCer)?S.tCer:DEF.tCer;
+const tRec=()=>TIME_RE.test(S.tRec)?S.tRec:DEF.tRec;
+function target(){ const [y,m,d]=ymd(); return new Date(`${y}-${p2(m)}-${p2(d)}T${tCer()}:00-05:00`); }
+function fmtTime(t){ const [h,mi]=t.split(':').map(Number); return `${h%12||12}:${p2(mi)} ${h<12?'a. m.':'p. m.'}`; }
+const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+const nameA=()=>(S.a||'').trim()||DEF.a;
+const nameB=()=>(S.b||'').trim()||DEF.b;
+const fullA=()=>(S.fa||'').trim()||DEF.fa;
+const fullB=()=>(S.fb||'').trim()||DEF.fb;
+const enc=encodeURIComponent;
+
+/* ---------- Render ---------- */
+let place='cer';
+function renderCal(){
+  const [y,m,d]=ymd();
+  const first=(new Date(y,m-1,1).getDay()+6)%7;
+  const dim=new Date(y,m,0).getDate();
+  $('#calTitle').textContent=`${MONTHS[m-1]} ${y}`;
+  const grid=$('#calGrid');
+  grid.setAttribute('aria-label',`Calendario de ${MONTHS[m-1]} de ${y} con el día ${d} marcado`);
+  let h=['L','M','X','J','V','S','D'].map(x=>`<span class="h" aria-hidden="true">${x}</span>`).join('');
+  for(let i=0;i<first;i++) h+='<span aria-hidden="true"></span>';
+  for(let i=1;i<=dim;i++) h+=`<span aria-hidden="true"${i===d?' class="hit"':''}>${i}</span>`;
+  grid.innerHTML=h;
+}
+function renderPlace(swap){
+  const p=S[place];
+  $('#dKick').textContent=place==='cer'?'Ceremonia':'Recepción';
+  $('#dTime').textContent=fmtTime(place==='cer'?tCer():tRec());
+  $('#dName').textContent=p.name;
+  $('#dAddr').textContent=p.addr;
+  $('#dNote').textContent=p.note;
+  $('#dMap').href=`https://www.google.com/maps/search/?api=1&query=${enc(p.q)}`;
+  $$('.tab').forEach(t=>{ const on=t.dataset.k===place; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1; });
+  $('#lugarPanel').setAttribute('aria-labelledby','tab-'+place);
+  $('#pin-cer').classList.toggle('on',place==='cer');
+  $('#pin-rec').classList.toggle('on',place==='rec');
+  if(swap){ const el=$('#det'); el.classList.remove('swap'); void el.offsetWidth; el.classList.add('swap'); }
+}
+function renderMsg(swap){
+  $$('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.tone===S.tone));
+  $('#msgText').textContent=S.tone==='propio'?(S.custom.trim()||DEF.custom):(MSG[S.tone]||MSG.calido);
+  $('#msgSign').textContent=`${nameA()} y ${nameB()}`;
+  if(swap){ const q=$('#quote'); q.classList.remove('swap'); void q.offsetWidth; q.classList.add('swap'); }
+}
+function render(){
+  const [y,m,d]=ymd();
+  const dow=DAYS[new Date(y,m-1,d).getDay()];
+  $$('.n-a').forEach(e=>e.textContent=nameA());
+  $$('.n-b').forEach(e=>e.textContent=nameB());
+  $$('.fa').forEach(e=>e.textContent=fullA());
+  $$('.fb').forEach(e=>e.textContent=fullB());
+  $$('.ini-a').forEach(e=>e.textContent=nameA().charAt(0).toUpperCase());
+  $$('.ini-b').forEach(e=>e.textContent=nameB().charAt(0).toUpperCase());
+  $('#dow').textContent=dow;
+  $('#dayn').textContent=d;
+  $('#mon').textContent=MONTHS[m-1];
+  $('#yr').textContent=y;
+  $('#heroPlace').textContent=S.cer.name;
+  $('#heroTime').textContent=fmtTime(tCer());
+  $('#hFecha').textContent=`${cap(dow)} ${d} de ${MONTHS[m-1]} de ${y}`;
+  $('#fDate').textContent=`${p2(d)} · ${p2(m)} · ${y}`;
+  $('#lDate').textContent=`${p2(d)} · ${p2(m)} · ${y}`;
+  renderCal();
+  renderPlace(false);
+  renderMsg(false);
+
+  const start=target(), end=new Date(start.getTime()+7*3600e3);
+  const f=x=>x.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  $('#gcal').href=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc('Matrimonio de '+nameA()+' y '+nameB())}&dates=${f(start)}/${f(end)}&details=${enc('Ceremonia a las '+fmtTime(tCer())+' Cena a las '+fmtTime(tRec())+' en '+S.rec.name+'.')}&location=${enc(S.cer.q)}`;
+
+  $('#rsvpDate').textContent='25 de noviembre de 2026';
+  $('#wa').href=`https://wa.me/573113361823?text=${enc('Hola '+nameA()+' y '+nameB()+', confirmo mi asistencia a su matrimonio el '+d+' de '+MONTHS[m-1]+'. Mi nombre es: ')}`;
+  tick();
+}
+
+/* ---------- Cuenta regresiva ---------- */
+function tick(){
+  const diff=target().getTime()-Date.now();
+  if(Number.isNaN(diff)) return;
+  const note=$('#cdNote');
+  if(diff<=0){
+    ['#cdD','#cdH','#cdM','#cdS'].forEach(id=>$(id).textContent=id==='#cdD'?'0':'00');
+    note.textContent=diff>-864e5?'Hoy es el gran día.':'Gracias por acompañarnos.';
+    return;
+  }
+  const s=Math.floor(diff/1000);
+  $('#cdD').textContent=Math.floor(s/86400);
+  $('#cdH').textContent=p2(Math.floor(s%86400/3600));
+  $('#cdM').textContent=p2(Math.floor(s%3600/60));
+  $('#cdS').textContent=p2(s%60);
+  note.textContent=`Para la ceremonia de las ${fmtTime(tCer())}.`;
+}
+setInterval(tick,1000);
+
+/* ---------- Toast y portapapeles ---------- */
+let toastT;
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('on'),2200); }
+async function copyText(text,el){
+  try{ await navigator.clipboard.writeText(text); toast('Copiado'); }
+  catch(e){
+    if(el){ const r=document.createRange(); r.selectNodeContents(el); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+    toast('Selecciona el texto y cópialo');
+  }
+}
+$('#dCopy').addEventListener('click',()=>copyText(S[place].addr,$('#dAddr')));
+$('#telCopy').addEventListener('click',()=>copyText($('#tel').textContent,$('#tel')));
+
+/* ---------- Pestañas de lugar ---------- */
+function setPlace(k,focus){ if(k===place) return; place=k; renderPlace(true); if(focus) $('#tab-'+k).focus(); }
+$$('.tab').forEach(t=>{
+  t.addEventListener('click',()=>setPlace(t.dataset.k,false));
+  t.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'||e.key==='Home'||e.key==='End'){
+      e.preventDefault();
+      setPlace(e.key==='ArrowLeft'||e.key==='Home'?'cer':'rec',true);
+    }
+  });
+});
+['cer','rec'].forEach(k=>$('#pin-'+k).addEventListener('click',()=>setPlace(k,false)));
+
+/* ---------- Mensaje ---------- */
+$$('.chip').forEach(c=>c.addEventListener('click',()=>{ S.tone=c.dataset.tone; save(); renderMsg(true); }));
+
+/* ---------- Ramas dibujadas ---------- */
+(function(){
+  const leaf=(x,y,a,s,d)=>`<path pathLength="1" style="--d:${d}s" transform="translate(${x} ${y}) rotate(${a}) scale(${s})" d="M0 0C10-11 28-11 40 0C28 11 10 11 0 0Z"/>`;
+  let h='<path pathLength="1" style="--d:.2s" d="M10 250C40 170 60 120 150 20"/>';
+  h+=leaf(27,205,-15,.9,.7)+leaf(46,163,-125,1,.95)+leaf(70,121,-5,1,1.2)+leaf(104,75,-105,1,1.45)+leaf(104,75,0,.9,1.6)+leaf(137,35,-100,.8,1.75);
+  h+='<g class="flower" transform="translate(150 20)">';
+  for(let k=0;k<5;k++) h+=`<path class="flower" pathLength="1" style="--d:${1.9+k*.12}s" transform="rotate(${k*72})" d="M0 0C-7-8-7-19 0-24C7-19 7-8 0 0Z"/>`;
+  h+='</g>';
+  $$('.branch').forEach(s=>{ s.innerHTML=h; });
+})();
+
+/* ---------- Pétalos ---------- */
+(function(){
+  const cv=$('#petals'), ctx=cv.getContext('2d'), hero=$('#hero');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W=0,H=0,petals=[],raf=0,frame=0,cA='#d77fb0',cB='#f0c4dc';
+  function colors(){ const cs=getComputedStyle(document.documentElement); cA=cs.getPropertyValue('--petal-a').trim()||cA; cB=cs.getPropertyValue('--petal-b').trim()||cB; }
+  function make(init){
+    return {x:Math.random()*W,y:init?Math.random()*H:-24,s:6+Math.random()*9,rot:Math.random()*6.28,vr:(Math.random()-.5)*.02,
+      vy:.28+Math.random()*.5,sway:Math.random()*6.28,sw:.012+Math.random()*.014,amp:.25+Math.random()*.55,a:.3+Math.random()*.4,t:Math.random()<.6?0:1};
+  }
+  function size(){
+    const r=cv.getBoundingClientRect(), dpr=Math.min(2,window.devicePixelRatio||1);
+    W=r.width; H=r.height; cv.width=Math.round(W*dpr); cv.height=Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n=Math.max(14,Math.min(30,Math.round(W/22)));
+    petals=Array.from({length:n},()=>make(true));
+    colors(); draw(false);
+  }
+  function draw(step){
+    ctx.clearRect(0,0,W,H);
+    for(const p of petals){
+      if(step){ p.y+=p.vy; p.sway+=p.sw; p.x+=Math.sin(p.sway)*p.amp; p.rot+=p.vr; if(p.y>H+24){ Object.assign(p,make(false)); } }
+      ctx.save();
+      ctx.translate(p.x,p.y); ctx.rotate(p.rot); ctx.scale(.55+.45*Math.cos(p.sway*1.7),1);
+      ctx.globalAlpha=p.a; ctx.fillStyle=p.t?cB:cA;
+      ctx.beginPath(); ctx.moveTo(0,-p.s); ctx.quadraticCurveTo(p.s*.9,-p.s*.15,0,p.s); ctx.quadraticCurveTo(-p.s*.9,-p.s*.15,0,-p.s); ctx.fill();
+      ctx.restore();
+    }
+  }
+  function loop(){ frame++; if(frame%90===0) colors(); draw(true); raf=requestAnimationFrame(loop); }
+  function start(){ if(!raf&&!reduce) raf=requestAnimationFrame(loop); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=0; } }
+  if('ResizeObserver' in window) new ResizeObserver(size).observe(hero); else{ size(); addEventListener('resize',size); }
+  if('IntersectionObserver' in window) new IntersectionObserver(es=>{ es[0].isIntersecting?start():stop(); }).observe(hero); else start();
+  document.addEventListener('visibilitychange',()=>{ document.hidden?stop():start(); });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener&&matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ colors(); draw(false); });
+})();
+
+render();
+})();
+</script>
+<script>
+(function(){
+  var o=document.getElementById('sobre'); if(!o) return;
+  var seal=document.getElementById('sello'), root=document.documentElement;
+  var wrap=document.querySelector('.wrap'), fab=null;
+  var reduce=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var done=false, scene=null;
+  function setInert(v){ try{ if(wrap) wrap.inert=v; if(fab) fab.inert=v; }catch(e){} }
+  setInert(true);
+  try{ seal.focus({preventScroll:true}); }catch(e){}
+
+  /* Sello de cera con borde irregular */
+  try{
+    var wp=document.getElementById('waxPath'), pts=[], n=96;
+    for(var i=0;i<n;i++){
+      var th=i/n*Math.PI*2, r=43+2.4*Math.sin(5*th+.6)+1.4*Math.sin(9*th+2)+1*Math.sin(13*th);
+      pts.push((50+r*Math.cos(th)).toFixed(2)+' '+(50+r*Math.sin(th)).toFixed(2));
+    }
+    wp.setAttribute('d','M'+pts.join('L')+'Z');
+  }catch(e){}
+
+  try{ scene=salon(o,reduce); }catch(e){ scene=null; }
+
+  function open(){
+    if(done) return; done=true;
+    o.classList.add('opening'); startMusic();
+    setTimeout(function(){
+      root.classList.remove('locked'); setInert(false); o.classList.add('leaving'); window.scrollTo(0,0);
+    },reduce?250:2300);
+    setTimeout(function(){
+      o.hidden=true;
+      if(scene) scene.stop();
+      var nm=document.querySelector('.names');
+      if(nm){ nm.setAttribute('tabindex','-1'); try{ nm.focus({preventScroll:true}); }catch(e){} }
+    },reduce?650:3400);
+  }
+  var au=document.getElementById('musica'), mb=document.getElementById('musicBtn');
+  function sync(){ if(!mb||!au) return; mb.setAttribute('aria-pressed',String(!au.paused)); }
+  if(au&&mb){
+    au.addEventListener('loadedmetadata',function(){ mb.hidden=false; });
+    au.addEventListener('error',function(){ mb.hidden=true; });
+    au.addEventListener('play',sync); au.addEventListener('pause',sync);
+    mb.addEventListener('click',function(){ if(au.paused){ au.volume=.85; au.play().catch(function(){}); } else au.pause(); });
+  }
+  function startMusic(){
+    if(!au||au.error) return;
+    try{
+      au.volume=0; var pr=au.play(); if(pr&&pr.catch) pr.catch(function(){});
+      var v=0, iv=setInterval(function(){ v=Math.min(.85,v+.05); au.volume=v; if(v>=.85) clearInterval(iv); },120);
+    }catch(e){}
+  }
+  seal.addEventListener('click',open);
+
+  /* ---------- Brillos dorados sobre la foto del salón ---------- */
+  function salon(host,reduce){
+    var c=document.getElementById('brillos'), y=c.getContext('2d');
+    var TAU=Math.PI*2, W=0, H=0, dust=[], raf=0, stopped=false, ro=null, t0=performance.now();
+    var glow=document.createElement('canvas'); glow.width=glow.height=64;
+    (function(){
+      var g=glow.getContext('2d'), r=g.createRadialGradient(32,32,0,32,32,32);
+      r.addColorStop(0,'rgba(255,251,236,1)'); r.addColorStop(.3,'rgba(240,215,150,.55)'); r.addColorStop(1,'rgba(235,205,130,0)');
+      g.fillStyle=r; g.fillRect(0,0,64,64);
+    })();
+    function frame(now){
+      var t=(now-t0)/1000;
+      y.clearRect(0,0,W,H);
+      dust.forEach(function(p){
+        p.y-=p.v; p.x+=Math.sin(t*.6+p.p)*.18;
+        if(p.y<-14){ p.y=H+14; p.x=Math.random()*W; }
+        y.globalAlpha=p.a*(.45+.55*Math.sin(t*1.5+p.p));
+        y.drawImage(glow,p.x-p.r,p.y-p.r,p.r*2,p.r*2);
+      });
+      y.globalAlpha=1;
+    }
+    function size(){
+      var dpr=Math.min(2,window.devicePixelRatio||1);
+      W=host.clientWidth; H=host.clientHeight;
+      if(!W||!H) return;
+      c.width=Math.round(W*dpr); c.height=Math.round(H*dpr);
+      y.setTransform(dpr,0,0,dpr,0,0);
+      var cnt=Math.max(18,Math.min(46,Math.round(W*H/16000)));
+      dust=[];
+      for(var i=0;i<cnt;i++) dust.push({x:Math.random()*W,y:Math.random()*H,r:3+Math.random()*7,v:.14+Math.random()*.34,a:.4+Math.random()*.5,p:Math.random()*TAU});
+      frame(performance.now());
+    }
+    function loop(now){ if(stopped) return; frame(now); raf=requestAnimationFrame(loop); }
+    size();
+    if(!reduce) raf=requestAnimationFrame(loop);
+    if('ResizeObserver' in window){ ro=new ResizeObserver(function(){ if(!stopped) size(); }); ro.observe(host); }
+    return { stop:function(){ stopped=true; if(raf) cancelAnimationFrame(raf); if(ro) ro.disconnect(); } };
+  }
+})();
+</script>
+
+</body></html>
